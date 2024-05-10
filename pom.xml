@@ -32,6 +32,8 @@
     <!-- Spring -->
     <spring-version>6.0.14</spring-version>
     <spring-boot-version>3.1.6</spring-boot-version>
+    <!-- Camel -->
+    <camel-version>4.0.0.redhat-00039</camel-version>
     <!-- Jetty -->
     <jetty-version>11.0.18</jetty-version>
     <!-- Keycloak -->
