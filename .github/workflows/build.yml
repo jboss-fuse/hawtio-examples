@@ -3,12 +3,12 @@ name: Build
 on:
   pull_request_target:
     branches:
-      - hawtio-4.0.0-product
+      - red-hat-build-of-apache-camel-4.4
     paths-ignore:
       - "**.md"
   push:
     branches:
-      - hawtio-4.0.0-product
+      - red-hat-build-of-apache-camel-4.4
     paths-ignore:
       - "**.md"
   workflow_dispatch:
