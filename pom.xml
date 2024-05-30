@@ -29,7 +29,6 @@
     <!-- Quarkus -->
     <quarkus-version>3.8.4.SP1-redhat-00001</quarkus-version>
     <!-- Spring -->
-    <spring-version>6.1.6</spring-version>
     <spring-boot-version>3.2.5</spring-boot-version>
     <!-- Camel -->
     <camel-version>4.4.0.redhat-00014</camel-version>
