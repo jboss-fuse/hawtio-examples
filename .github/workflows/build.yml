@@ -3,12 +3,12 @@ name: Build
 on:
   pull_request_target:
     branches:
-      - red-hat-build-of-apache-camel-4.4
+      - rhbac-4.8
     paths-ignore:
       - "**.md"
   push:
     branches:
-      - red-hat-build-of-apache-camel-4.4
+      - rhbac-4.8
     paths-ignore:
       - "**.md"
   workflow_dispatch:

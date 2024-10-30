@@ -1,6 +1,6 @@
 # Red Hat build of HawtIO Examples
 
-[![Build](https://github.com/jboss-fuse/hawtio-examples/actions/workflows/build.yml/badge.svg?branch=red-hat-build-of-apache-camel-4.4)](https://github.com/jboss-fuse/hawtio-examples/actions/workflows/build.yml)
+[![Build](https://github.com/jboss-fuse/hawtio-examples/actions/workflows/build.yml/badge.svg?branch=rhbac-4.8)](https://github.com/jboss-fuse/hawtio-examples/actions/workflows/build.yml)
 
 | Example | Description |
 |---------|-------------|
