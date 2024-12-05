@@ -21,45 +21,45 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-    <hawtio-version>4.1.0.redhat-00004</hawtio-version>
+    <hawtio-version>4.1.0.redhat-00014</hawtio-version>
 
     <!-- Versions for major components -->
     <!-- Jolokia -->
-    <jolokia-version>2.1.1</jolokia-version>
+    <jolokia-version>2.1.2.redhat-00020</jolokia-version>
     <!-- Quarkus -->
-    <quarkus-version>3.15.1.SP1-temporary-redhat-00001</quarkus-version>
+    <quarkus-version>3.15.2.redhat-00003</quarkus-version>
     <!-- Spring -->
-    <spring-boot-version>3.3.4</spring-boot-version>
+    <spring-boot-version>3.3.6</spring-boot-version>
     <!-- Camel -->
     <!-- https://access.redhat.com/articles/7021827#headerCSB -->
-    <camel-spring-boot-version>4.8.0.redhat-00010</camel-spring-boot-version>
+    <camel-spring-boot-version>4.8.0.redhat-00022</camel-spring-boot-version>
     <!-- Jetty -->
-    <jetty-version>11.0.20</jetty-version>
+    <jetty-version>11.0.24</jetty-version>
     <!-- Keycloak -->
     <keycloak-version>23.0.1</keycloak-version>
 
     <!-- Other dependencies -->
     <servlet-api-version>5.0.0</servlet-api-version>
-    <slf4j-version>2.0.9</slf4j-version>
+    <slf4j-version>2.0.11</slf4j-version>
 
     <!-- Used for maven-frontend-plugin -->
     <node-version>v20.9.0</node-version>
     <yarn-version>v1.22.21</yarn-version>
 
     <!-- Maven plugins -->
-    <build-helper-maven-plugin-version>3.5.0</build-helper-maven-plugin-version>
-    <docker-plugin-version>0.43.4</docker-plugin-version>
-    <exec-maven-plugin-version>3.1.1</exec-maven-plugin-version>
-    <frontend-maven-plugin-version>1.15.0</frontend-maven-plugin-version>
+    <build-helper-maven-plugin-version>3.6.0</build-helper-maven-plugin-version>
+    <docker-plugin-version>0.45.1</docker-plugin-version>
+    <exec-maven-plugin-version>3.4.1</exec-maven-plugin-version>
+    <frontend-maven-plugin-version>1.15.1</frontend-maven-plugin-version>
     <jetty-plugin-version>${jetty-version}</jetty-plugin-version>
     <maven-antrun-plugin-version>3.1.0</maven-antrun-plugin-version>
-    <maven-clean-plugin-version>3.3.2</maven-clean-plugin-version>
-    <maven-compiler-plugin-version>3.11.0</maven-compiler-plugin-version>
-    <maven-dependency-plugin-version>3.6.1</maven-dependency-plugin-version>
-    <maven-failsafe-plugin-version>3.2.2</maven-failsafe-plugin-version>
-    <maven-release-plugin-version>3.0.1</maven-release-plugin-version>
+    <maven-clean-plugin-version>3.4.0</maven-clean-plugin-version>
+    <maven-compiler-plugin-version>3.13.0</maven-compiler-plugin-version>
+    <maven-dependency-plugin-version>3.8.0</maven-dependency-plugin-version>
+    <maven-failsafe-plugin-version>3.5.0</maven-failsafe-plugin-version>
+    <maven-release-plugin-version>3.1.1</maven-release-plugin-version>
     <maven-resources-plugin-version>2.6</maven-resources-plugin-version>
-    <maven-surefire-plugin-version>3.2.2</maven-surefire-plugin-version>
+    <maven-surefire-plugin-version>3.5.0</maven-surefire-plugin-version>
     <maven-war-plugin-version>3.4.0</maven-war-plugin-version>
   </properties>
 
