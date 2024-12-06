@@ -35,8 +35,6 @@
     <camel-spring-boot-version>4.8.0.redhat-00022</camel-spring-boot-version>
     <!-- Jetty -->
     <jetty-version>11.0.24</jetty-version>
-    <!-- Keycloak -->
-    <keycloak-version>23.0.1</keycloak-version>
 
     <!-- Other dependencies -->
     <servlet-api-version>5.0.0</servlet-api-version>
