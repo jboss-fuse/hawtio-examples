@@ -21,7 +21,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-    <hawtio-version>4.1.0.redhat-00014</hawtio-version>
+    <hawtio-version>4.1.0.redhat-00015</hawtio-version>
 
     <!-- Versions for major components -->
     <!-- Jolokia -->
