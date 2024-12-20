@@ -24,8 +24,6 @@
     <hawtio-version>4.1.0.redhat-00015</hawtio-version>
 
     <!-- Versions for major components -->
-    <!-- Jolokia -->
-    <jolokia-version>2.1.2.redhat-00020</jolokia-version>
     <!-- Quarkus -->
     <quarkus-version>3.15.2.redhat-00003</quarkus-version>
     <!-- Spring -->
