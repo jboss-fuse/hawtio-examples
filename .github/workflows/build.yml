@@ -4,11 +4,13 @@ on:
   pull_request_target:
     branches:
       - rhbac-4.8
+      - rhbac-4.10
     paths-ignore:
       - "**.md"
   push:
     branches:
       - rhbac-4.8
+      - rhbac-4.10
     paths-ignore:
       - "**.md"
   workflow_dispatch:
