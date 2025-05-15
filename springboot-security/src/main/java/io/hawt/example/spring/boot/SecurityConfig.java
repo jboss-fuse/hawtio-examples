@@ -77,7 +77,7 @@ public class SecurityConfig {
             return db;
         } catch (IOException e) {
             return new InMemoryUserDetailsManager(User.builder()
-                    .username("hawtio").password("{noop}hawtio")
+                    .username("hawtio").password("hawtio")
                     .roles("admin", "viewer").build());
         }
     }

@@ -6,7 +6,7 @@
   <parent>
     <groupId>io.hawt.examples</groupId>
     <artifactId>hawtio-examples</artifactId>
-    <version>4.1.0-SNAPSHOT</version>
+    <version>4.2.0-SNAPSHOT</version>
   </parent>
 
   <groupId>io.hawt.examples</groupId>
@@ -75,6 +75,10 @@
       <groupId>io.hawt</groupId>
       <artifactId>hawtio-springboot</artifactId>
     </dependency>
+    <dependency>
+      <groupId>io.hawt</groupId>
+      <artifactId>hawtio-springboot-security</artifactId>
+    </dependency>
   </dependencies>
 
   <build>
@@ -114,7 +118,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-dependency-plugin</artifactId>
-        <version>3.8.0</version>
+        <version>3.8.1</version>
         <executions>
           <execution>
             <id>copy</id>
