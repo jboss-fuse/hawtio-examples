@@ -21,7 +21,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-    <hawtio-version>4.2.0.redhat-00031</hawtio-version>
+    <hawtio-version>4.2.0.redhat-00034</hawtio-version>
 
     <!-- Versions for major components -->
     <!-- Quarkus -->
