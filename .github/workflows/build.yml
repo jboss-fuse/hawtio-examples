@@ -5,12 +5,14 @@ on:
     branches:
       - rhbac-4.8
       - rhbac-4.10
+      - rhbac-4.14
     paths-ignore:
       - "**.md"
   push:
     branches:
       - rhbac-4.8
       - rhbac-4.10
+      - rhbac-4.14
     paths-ignore:
       - "**.md"
   workflow_dispatch:
