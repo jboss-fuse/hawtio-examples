@@ -85,6 +85,12 @@
       <artifactId>camel-quarkus-management</artifactId>
     </dependency>
 
+    <!-- To enable Camel route dumping to XML. Required for the route diagram -->
+    <dependency>
+      <groupId>org.apache.camel.quarkus</groupId>
+      <artifactId>camel-quarkus-jaxb</artifactId>
+    </dependency>
+
     <!--
       To enable Camel plugin debugging feature, add this dependency.
     -->
@@ -140,6 +146,21 @@
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-junit5</artifactId>
       <scope>test</scope>
+    </dependency>
+
+    <!-- Minimal test dependencies to *-deployment artifacts for consistent Hawtio project build order -->
+    <dependency>
+      <groupId>io.hawt</groupId>
+      <artifactId>hawtio-quarkus-deployment</artifactId>
+      <version>${hawtio-version}</version>
+      <type>pom</type>
+      <scope>test</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
   </dependencies>
 
