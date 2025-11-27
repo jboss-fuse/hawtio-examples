@@ -20,13 +20,13 @@ In another terminal, attach a Jolokia agent to the running route and then open H
 
 ```console
 camel jolokia ContentBasedRouter
-camel hawtio --version=4.2.0.redhat-00034
+camel hawtio --version=4.3.0.redhat-00010
 ```
 
 You can also combine the two commands in a single one with `camel hawtio`:
 
 ```console
-camel hawtio --version=4.2.0.redhat-00034 ContentBasedRouter
+camel hawtio --version=4.3.0.redhat-00010 ContentBasedRouter
 ```
 
 Once the Hawtio console is open, go to `Connect` -> `Discover` tab. You will see the running route `ContentBasedRouter` is discovered.
