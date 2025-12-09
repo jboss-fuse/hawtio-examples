@@ -1,6 +1,8 @@
 # Red Hat build of HawtIO Examples
 
+<!--
 [![Build](https://github.com/jboss-fuse/hawtio-examples/actions/workflows/build.yml/badge.svg?branch=rhbac-4.14)](https://github.com/jboss-fuse/hawtio-examples/actions/workflows/build.yml)
+-->
 
 | Example | Description |
 |---------|-------------|
