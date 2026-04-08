@@ -5,7 +5,7 @@
   <groupId>io.hawt.examples</groupId>
   <artifactId>hawtio-examples</artifactId>
   <packaging>pom</packaging>
-  <version>4.3.0-SNAPSHOT</version>
+  <version>4.3.1-SNAPSHOT</version>
   <name>Hawtio Examples</name>
   <description>Hawtio :: Examples</description>
 
@@ -21,7 +21,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-    <hawtio-version>4.3.0.redhat-00010</hawtio-version>
+    <hawtio-version>4.3.1.redhat-00005</hawtio-version>
 
     <!-- Versions for major components -->
     <!-- Quarkus -->
