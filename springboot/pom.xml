@@ -109,6 +109,14 @@
       <groupId>org.apache.camel.springboot</groupId>
       <artifactId>camel-debug-starter</artifactId>
     </dependency>
+    <!--
+      This dependency provides a dedicated "cache key provider", so Hawtio with Camel works much faster in the browser
+    -->
+    <dependency>
+      <groupId>org.jolokia.integration</groupId>
+      <artifactId>jolokia-integration-camel</artifactId>
+      <version>${jolokia-integration-version}</version>
+    </dependency>
   </dependencies>
 
   <build>
@@ -136,7 +144,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-dependency-plugin</artifactId>
-        <version>3.9.0</version>
+        <version>3.10.0</version>
         <executions>
           <execution>
             <id>copy</id>

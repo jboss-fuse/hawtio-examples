@@ -24,9 +24,11 @@
     <hawtio-version>4.4.0.redhat-00018</hawtio-version>
 
     <!-- Versions for major components -->
+    <!-- Jolokia -->
+    <jolokia-integration-version>0.9.0</jolokia-integration-version>
     <!-- Quarkus -->
     <quarkus-version>3.33.1.redhat-00002</quarkus-version>
-    <!-- Spring -->
+    <!-- Spring Boot 3 -->
     <spring-boot-version>3.5.14</spring-boot-version>
     <!-- Camel -->
     <!-- https://access.redhat.com/articles/7021827#headerCSB -->
@@ -46,25 +48,30 @@
 
     <!-- Maven plugins -->
     <build-helper-maven-plugin-version>3.6.1</build-helper-maven-plugin-version>
-    <docker-plugin-version>0.47.0</docker-plugin-version>
-    <exec-maven-plugin-version>3.6.0</exec-maven-plugin-version>
-    <frontend-maven-plugin-version>1.15.4</frontend-maven-plugin-version>
-    <jetty-plugin-version>11.0.24</jetty-plugin-version>
-    <maven-antrun-plugin-version>3.1.0</maven-antrun-plugin-version>
+    <docker-plugin-version>0.48.1</docker-plugin-version>
+    <exec-maven-plugin-version>3.6.3</exec-maven-plugin-version>
+    <frontend-maven-plugin-version>2.0.0</frontend-maven-plugin-version>
+    <maven-antrun-plugin-version>3.2.0</maven-antrun-plugin-version>
     <maven-clean-plugin-version>3.5.0</maven-clean-plugin-version>
-    <maven-compiler-plugin-version>3.14.0</maven-compiler-plugin-version>
-    <maven-dependency-plugin-version>3.9.0</maven-dependency-plugin-version>
-    <maven-failsafe-plugin-version>3.5.4</maven-failsafe-plugin-version>
-    <maven-release-plugin-version>3.1.1</maven-release-plugin-version>
+    <maven-compiler-plugin-version>3.15.0</maven-compiler-plugin-version>
+    <maven-dependency-plugin-version>3.10.0</maven-dependency-plugin-version>
+    <maven-failsafe-plugin-version>3.5.5</maven-failsafe-plugin-version>
+    <maven-release-plugin-version>3.3.1</maven-release-plugin-version>
     <maven-resources-plugin-version>2.6</maven-resources-plugin-version>
-    <maven-surefire-plugin-version>3.5.4</maven-surefire-plugin-version>
-    <maven-war-plugin-version>3.4.0</maven-war-plugin-version>
+    <maven-surefire-plugin-version>3.5.5</maven-surefire-plugin-version>
+    <maven-war-plugin-version>3.5.1</maven-war-plugin-version>
   </properties>
 
   <modules>
     <module>quarkus</module>
     <module>quarkus-keycloak</module>
     <module>sample-plugin</module>
+    <module>springboot</module>
+    <module>springboot-authentication</module>
+    <module>springboot-keycloak</module>
+    <module>springboot-log4j2</module>
+    <module>springboot-plugin</module>
+    <module>springboot-security</module>
     <module>war-plugin</module>
   </modules>
 
@@ -220,9 +227,9 @@
           <version>${docker-plugin-version}</version>
         </plugin>
         <plugin>
-          <groupId>org.eclipse.jetty</groupId>
-          <artifactId>jetty-maven-plugin</artifactId>
-          <version>${jetty-plugin-version}</version>
+          <groupId>org.eclipse.jetty.ee10</groupId>
+          <artifactId>jetty-ee10-maven-plugin</artifactId>
+          <version>${jetty12-version}</version>
         </plugin>
       </plugins>
     </pluginManagement>
@@ -230,21 +237,6 @@
   </build>
 
   <profiles>
-    <profile>
-      <id>jdk17</id>
-      <activation>
-        <jdk>[17,)</jdk>
-      </activation>
-      <modules>
-        <module>springboot</module>
-        <module>springboot-authentication</module>
-        <module>springboot-keycloak</module>
-        <module>springboot-log4j2</module>
-        <module>springboot-plugin</module>
-        <module>springboot-security</module>
-      </modules>
-    </profile>
-
     <profile>
       <id>fastinstall</id>
       <properties>
